@@ -1,3 +1,4 @@
+#include "HanoiTower.h"
 #include <iostream>
 
 void HaniMove(int num, char from, char by, char to)
@@ -12,9 +13,4 @@ void HaniMove(int num, char from, char by, char to)
 		printf("원반%d를 %c에서 %c로 이동\n", num, from, to);	// 가장 큰 원반 옮김
 		HaniMove(num - 1, by, from, to);	// 작은 원반들 큰 원반 위로 옮기기
 	}
-}
-
-int main()
-{
-	HaniMove(10, 'A', 'B', 'C');
 }
